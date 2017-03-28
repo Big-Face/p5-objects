@@ -27,11 +27,11 @@ function Pacman(x,y){
   };
   this.move = function(){
     if(keyIsDown(UP_ARROW)){
-      this.y += 5;
+      this.y -= 5;
       this.rotation = 270;
     }
     if(keyIsDown(DOWN_ARROW)){
-      this.y -= 5;
+      this.y += 5;
       this.rotation = 90;
     }
     if(keyIsDown(RIGHT_ARROW)){
